@@ -1,0 +1,206 @@
+[2025-05-04 20:30:05] [PERFORMANCE] File load operation completed in 5ms
+[2025-05-04 20:30:57] [PERFORMANCE] Search operation completed in 5ms
+[2025-05-04 20:31:21] [PERFORMANCE] Search operation completed in 3ms
+[2025-05-04 20:31:22] [PERFORMANCE] Replace operation completed in 4ms
+[2025-05-04 20:31:35] [PERFORMANCE] File save operation completed in 2ms
+[2025-05-04 20:33:51] [INFO] Starting batch processing of directory: C:\Users\HP\Documents
+[2025-05-04 20:33:51] [ERROR] Error during batch processing
+java.io.UncheckedIOException: java.nio.file.AccessDeniedException: C:\Users\HP\Documents\My Music
+	at java.base/java.nio.file.FileTreeIterator.fetchNextIfNeeded(FileTreeIterator.java:87)
+	at java.base/java.nio.file.FileTreeIterator.hasNext(FileTreeIterator.java:103)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:132)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.processDirectory(BatchProcessor.java:33)
+	at com.example.automated_text_processor/com.example.automated_text_processor.controller.TextProcessorController.processBatch(TextProcessorController.java:88)
+	at com.example.automated_text_processor/com.example.automated_text_processor.controller.TextProcessorController.lambda$setupEventHandlers$4(TextProcessorController.java:64)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2025-05-04 20:33:51] [ERROR] Batch processing failed
+java.lang.RuntimeException: Batch processing failed
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.processDirectory(BatchProcessor.java:54)
+	at com.example.automated_text_processor/com.example.automated_text_processor.controller.TextProcessorController.processBatch(TextProcessorController.java:88)
+	at com.example.automated_text_processor/com.example.automated_text_processor.controller.TextProcessorController.lambda$setupEventHandlers$4(TextProcessorController.java:64)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2025-05-04 20:35:45] [INFO] Starting batch processing of directory: C:\Users\HP\Documents\folder123
+[2025-05-04 20:35:45] [PERFORMANCE] Processing file: clb.txt completed in 2ms
+[2025-05-04 20:35:45] [PERFORMANCE] Processing file: root@N2-March-25-buntulevycaleb_gma.txt completed in 11ms
+[2025-05-04 20:35:45] [ERROR] Error processing file: Tickets.txt
+java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.lang.String.throwMalformed(String.java:1279)
+	at java.base/java.lang.String.decodeUTF8_UTF16(String.java:1235)
+	at java.base/java.lang.String.newStringUTF8NoRepl(String.java:759)
+	at java.base/java.lang.String.newStringNoRepl1(String.java:790)
+	at java.base/java.lang.String.newStringNoRepl(String.java:772)
+	at java.base/java.lang.System$2.newStringNoRepl(System.java:2480)
+	at java.base/java.nio.file.Files.readString(Files.java:3349)
+	at java.base/java.nio.file.Files.readString(Files.java:3305)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.processFile(BatchProcessor.java:63)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.lambda$processDirectory$2(BatchProcessor.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2025-05-04 20:35:45] [ERROR] Error processing file: Diagram_0.txt
+java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.lang.String.throwMalformed(String.java:1279)
+	at java.base/java.lang.String.decodeUTF8_UTF16(String.java:1235)
+	at java.base/java.lang.String.newStringUTF8NoRepl(String.java:759)
+	at java.base/java.lang.String.newStringNoRepl1(String.java:790)
+	at java.base/java.lang.String.newStringNoRepl(String.java:772)
+	at java.base/java.lang.System$2.newStringNoRepl(System.java:2480)
+	at java.base/java.nio.file.Files.readString(Files.java:3349)
+	at java.base/java.nio.file.Files.readString(Files.java:3305)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.processFile(BatchProcessor.java:63)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.lambda$processDirectory$2(BatchProcessor.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2025-05-04 20:35:45] [PERFORMANCE] Batch processing completed in 23ms
+[2025-05-04 20:36:27] [INFO] Saving processed files to: C:\Users\HP\Documents\output
+[2025-05-04 20:36:27] [PERFORMANCE] Saving processed files completed in 9ms
+[2025-05-04 20:36:27] [INFO] Batch processing completed for directory: C:\Users\HP\Documents\folder123
+[2025-05-04 20:39:04] [PERFORMANCE] Search operation completed in 3ms
+[2025-05-04 20:39:19] [INFO] Starting batch processing of directory: C:\Users\HP\Documents\folder123
+[2025-05-04 20:39:19] [PERFORMANCE] Processing file: clb.txt completed in 0ms
+[2025-05-04 20:39:19] [ERROR] Error processing file: Diagram_0.txt
+java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.lang.String.throwMalformed(String.java:1279)
+	at java.base/java.lang.String.decodeUTF8_UTF16(String.java:1235)
+	at java.base/java.lang.String.newStringUTF8NoRepl(String.java:759)
+	at java.base/java.lang.String.newStringNoRepl1(String.java:790)
+	at java.base/java.lang.String.newStringNoRepl(String.java:772)
+	at java.base/java.lang.System$2.newStringNoRepl(System.java:2480)
+	at java.base/java.nio.file.Files.readString(Files.java:3349)
+	at java.base/java.nio.file.Files.readString(Files.java:3305)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.processFile(BatchProcessor.java:63)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.lambda$processDirectory$2(BatchProcessor.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2025-05-04 20:39:19] [ERROR] Error processing file: Tickets.txt
+java.nio.charset.MalformedInputException: Input length = 1
+	at java.base/java.lang.String.throwMalformed(String.java:1279)
+	at java.base/java.lang.String.decodeUTF8_UTF16(String.java:1235)
+	at java.base/java.lang.String.newStringUTF8NoRepl(String.java:759)
+	at java.base/java.lang.String.newStringNoRepl1(String.java:790)
+	at java.base/java.lang.String.newStringNoRepl(String.java:772)
+	at java.base/java.lang.System$2.newStringNoRepl(System.java:2480)
+	at java.base/java.nio.file.Files.readString(Files.java:3349)
+	at java.base/java.nio.file.Files.readString(Files.java:3305)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.processFile(BatchProcessor.java:63)
+	at com.example.automated_text_processor/com.example.automated_text_processor.model.BatchProcessor.lambda$processDirectory$2(BatchProcessor.java:39)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[2025-05-04 20:39:19] [PERFORMANCE] Processing file: root@N2-March-25-buntulevycaleb_gma.txt completed in 6ms
+[2025-05-04 20:39:19] [PERFORMANCE] Batch processing completed in 32ms
+[2025-05-04 20:39:32] [INFO] Saving processed files to: C:\Users\HP\Documents\output
+[2025-05-04 20:39:32] [PERFORMANCE] Saving processed files completed in 119ms
+[2025-05-04 20:39:32] [INFO] Batch processing completed for directory: C:\Users\HP\Documents\folder123
+[2025-05-04 20:39:44] [PERFORMANCE] Search operation completed in 0ms
+[2025-05-04 20:39:47] [PERFORMANCE] Search operation completed in 1ms
+[2025-05-04 20:39:48] [PERFORMANCE] Search operation completed in 1ms
+[2025-05-04 20:39:48] [PERFORMANCE] Search operation completed in 1ms
+[2025-05-04 20:39:48] [PERFORMANCE] Search operation completed in 0ms
+[2025-05-04 20:39:50] [PERFORMANCE] Replace operation completed in 0ms
