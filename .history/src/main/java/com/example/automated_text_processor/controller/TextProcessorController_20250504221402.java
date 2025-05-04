@@ -224,7 +224,7 @@ public class TextProcessorController {
                     inputTextFlow.getChildren().add(new Text(text.substring(lastEnd, matcher.start())));
                 }
                 Text highlight = new Text(text.substring(matcher.start(), matcher.end()));
-                highlight.setStyle("-fx-fill: #000; -fx-background-color: #FFEB3B; -fx-font-weight: bold; -fx-underline: true;");
+                highlight.setStyle("-fx-fill: #fff; -fx-background-color: #2196F3; -fx-font-weight: bold; -fx-underline: true;");
                 inputTextFlow.getChildren().add(highlight);
                 lastEnd = matcher.end();
             }
