@@ -1,7 +1,7 @@
 # Automated Text Processor
 
 A modern JavaFX application for efficient text processing, analysis, and manipulation. Built with a focus on performance, user experience, and advanced text processing capabilities.
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 ## Features
 
