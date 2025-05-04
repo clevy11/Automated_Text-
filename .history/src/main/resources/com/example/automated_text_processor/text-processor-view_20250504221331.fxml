@@ -3,8 +3,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.text.TextFlow?>
-<?import javafx.scene.text.Text?>
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
@@ -44,7 +42,6 @@
         <VBox spacing="10" HBox.hgrow="ALWAYS">
             <Label text="Input Text:" />
             <TextArea fx:id="inputTextArea" VBox.vgrow="ALWAYS" wrapText="true" />
-            <TextFlow fx:id="inputTextFlow" VBox.vgrow="ALWAYS" style="-fx-background-color: #e3f2fd; -fx-padding: 5;" />
         </VBox>
         
         <VBox spacing="10" HBox.hgrow="ALWAYS">
