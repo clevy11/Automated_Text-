@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.textprocessor.controller.MainController"
+      spacing="10" padding="10">
+
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="Open" onAction="#handleOpenFile"/>
+            <MenuItem text="Save" onAction="#handleSaveFile"/>
+        </Menu>
+    </MenuBar>
+
+    <HBox spacing="10">
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Input Text"/>
+            <TextArea fx:id="inputTextArea" VBox.vgrow="ALWAYS"/>
+        </VBox>
+        
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Output Text"/>
+            <TextArea fx:id="outputTextArea" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </HBox>
+
+    <GridPane hgap="10" vgap="5">
+        <Label text="Regex Pattern:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="regexPatternField" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"/>
+        
+        <Label text="Replacement:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="replacementField" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS"/>
+    </GridPane>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Search" onAction="#handleSearch"/>
+        <Button text="Replace" onAction="#handleReplace"/>
+    </HBox>
+
+    <SplitPane VBox.vgrow="ALWAYS">
+        <VBox spacing="5">
+            <Label text="Processed Files"/>
+            <ListView fx:id="processedFilesList" VBox.vgrow="ALWAYS"/>
+        </VBox>
+        
+        <VBox spacing="5">
+            <Label text="Word Frequency"/>
+            <TableView fx:id="wordFrequencyTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="wordColumn" text="Word" prefWidth="150"/>
+                    <TableColumn fx:id="frequencyColumn" text="Frequency" prefWidth="100"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </SplitPane>
+
+</VBox> 
