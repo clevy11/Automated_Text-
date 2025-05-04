@@ -1,0 +1,48 @@
+.root {
+    -fx-background-color: #f5f5f5;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #BDBDBD;
+    -fx-border-radius: 4;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #BDBDBD;
+    -fx-border-radius: 4;
+    -fx-padding: 5;
+}
+
+.list-view {
+    -fx-background-color: white;
+    -fx-border-color: #BDBDBD;
+    -fx-border-radius: 4;
+}
+
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #424242;
+}
+
+.grid-pane {
+    -fx-padding: 10;
+    -fx-background-color: white;
+    -fx-background-radius: 4;
+    -fx-border-color: #BDBDBD;
+    -fx-border-radius: 4;
+} 

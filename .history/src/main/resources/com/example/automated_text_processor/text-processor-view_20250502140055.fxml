@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.automated_text_processor.controller.TextProcessorController"
+      spacing="10" padding="10">
+    
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button fx:id="loadFileButton" text="Load File" />
+        <Button fx:id="saveFileButton" text="Save File" />
+    </HBox>
+
+    <HBox spacing="10" VBox.vgrow="ALWAYS">
+        <VBox spacing="10" HBox.hgrow="ALWAYS">
+            <Label text="Input Text:" />
+            <TextArea fx:id="inputTextArea" VBox.vgrow="ALWAYS" wrapText="true" />
+        </VBox>
+        
+        <VBox spacing="10" HBox.hgrow="ALWAYS">
+            <Label text="Output Text:" />
+            <TextArea fx:id="outputTextArea" VBox.vgrow="ALWAYS" wrapText="true" editable="false" />
+        </VBox>
+    </HBox>
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Regex Pattern:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="regexPatternField" GridPane.columnIndex="1" GridPane.rowIndex="0" 
+                  HBox.hgrow="ALWAYS" />
+        
+        <Label text="Replacement:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="replacementField" GridPane.columnIndex="1" GridPane.rowIndex="1" 
+                  HBox.hgrow="ALWAYS" />
+        
+        <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="searchButton" text="Search" />
+            <Button fx:id="replaceButton" text="Replace" />
+        </HBox>
+    </GridPane>
+
+    <VBox spacing="5">
+        <Label text="Word Frequency Analysis:" />
+        <ListView fx:id="wordFrequencyList" VBox.vgrow="ALWAYS" prefHeight="150" />
+    </VBox>
+
+    <stylesheets>
+        <String fx:value="styles.css" />
+    </stylesheets>
+</VBox> 
